@@ -37,6 +37,7 @@ Matrix::Matrix(const Matrix &mat)
 
 Matrix::Matrix(int **array, unsigned int m, unsigned int n)
 {
+
     rows = m;
     cols = n;
     matrix = new int *[rows]; // array of rows and each element is address
@@ -68,7 +69,8 @@ int Matrix::get(unsigned i, unsigned j) const
 
 void Matrix::set(unsigned i, unsigned j, int value)
 {
-    matrix[i][j] = value;
+    if (rows)
+        matrix[i][j] = value;
 }
 
 Matrix Matrix::operator+(const Matrix &mat)
@@ -173,10 +175,4 @@ void Matrix::printMatrix()
             cout << matrix[i][j] << " " << endl;
         }
     }
-}
-int main()
-{
-
-    test_case_1();
-    return 0;
 }

@@ -15,6 +15,8 @@ public:
     void test_case_Matrix_make();
     Matrix(const Matrix &mat);
 
+    void test_case_Matrix_copy(const Matrix &mat);
+
     Matrix(int **array, unsigned int m, unsigned int n);
 
     unsigned int rows1() const;
