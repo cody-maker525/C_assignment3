@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Matrix.h"
 #include <string>
+#include <cassert>
 using namespace std;
 
 Matrix::Matrix(unsigned int m, unsigned int n)

@@ -9,15 +9,17 @@ private:
     int **matrix;
 
 public:
+    // first one, rows + cols input
     Matrix(unsigned int m, unsigned int n);
-
+    // first test case
+    void test_case_Matrix_make();
     Matrix(const Matrix &mat);
 
     Matrix(int **array, unsigned int m, unsigned int n);
 
     unsigned int rows1() const;
 
-    unsigned int Matrix::columns() const;
+    unsigned int columns() const;
 
     int get(unsigned i, unsigned j) const;
 
